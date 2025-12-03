@@ -20,5 +20,5 @@ for file in \
   tas_Amon_MPI-ESM-LR_esmrcp85_r1i1p1_200601-210012_pattern.rds \
   tas_Amon_MRI-ESM1_esmrcp85_r1i1p1_200601-210012_pattern.rds
 do
-  curl --silent --output="$dl_dir"/"$file" "$dl_url"/"$file"
+  curl --silent --location --output-dir "$dl_dir" --remote-name -- "$dl_url"/"$file" &
 done
