@@ -1,0 +1,4 @@
+[tools]
+just = "latest"
+python = "3.14.0"
+rust = "1.89"
